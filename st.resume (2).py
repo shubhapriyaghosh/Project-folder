@@ -16,9 +16,9 @@ from crewai import Agent, Task, Crew, LLM
 
 # Add this after the existing imports
 env = Environment(loader=FileSystemLoader("templates"))
-WKHTMLTOPDF_PATH = "C:\Program Files\wkhtmltopdf\bin\wkhtmltopdf.exe" # Windows
+WKHTMLTOPDF_PATH = "" # Windows
 
-GROQ_API_KEY = "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"
+GROQ_API_KEY = ""
 if not GROQ_API_KEY:
     st.error("GROQ_API_KEY not found. Please set it.")
     st.stop()
